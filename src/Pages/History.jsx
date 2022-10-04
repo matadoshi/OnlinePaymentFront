@@ -15,7 +15,7 @@ import { useNavigate, useSearchParams } from 'react-router-dom'
     }
      setCheckUser(user)
     if(user!==null){
-      axios.get(`https://localhost:44319/Invoice/Invoices/${user.id}`)
+      axios.get(`${process.env.REACT_APP_BASE_URL}/Invoice/Invoices/${user.id}`)
       .then(res=>{
         setData(res.data)
       })

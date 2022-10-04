@@ -14,7 +14,7 @@ const Pay = () => {
 
   useEffect(() => { 
     fetch(
-      `https://localhost:44319/Home/pay/${searchParams.get("id")}`,
+      `${process.env.REACT_APP_BASE_URL}/Home/pay/${searchParams.get("id")}`,
       {
           method: "GET",
           headers: {

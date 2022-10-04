@@ -10,7 +10,7 @@ function SliderCarousel() {
 
   useEffect(()=>
     {
-      axios.get("https://localhost:44319/Home/GetSlider")
+      axios.get(process.env.REACT_APP_BASE_URL+"/Home/GetSlider")
       .then(resp=> setSld(resp.data))
     },[])
 

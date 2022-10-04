@@ -15,7 +15,7 @@ function ResetPassword () {
     confirmpassword:""
     }}
   onSubmit={(val) => {
-    axios.put("https://localhost:44319/Account/ResetPassword",{
+    axios.put(process.env.REACT_APP_BASE_URL+"/Account/ResetPassword",{
       id:val.id,
       currentPassword:val.oldpassword,
       newPassword: val.password,

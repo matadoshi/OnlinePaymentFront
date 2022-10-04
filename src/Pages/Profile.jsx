@@ -43,7 +43,7 @@ function Settings() {
                 enableReinitialize={true}
                 onSubmit={(e)=>
                     {
-                      axios.post("https://localhost:44319/Account/EditProfile",e)
+                      axios.post(process.env.REACT_APP_BASE_URL+"/Account/EditProfile",e)
                       .then(resp=>
                         {
 

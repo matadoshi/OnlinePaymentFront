@@ -14,7 +14,7 @@ const Cards = () => {
     }
      setCheckUser(user)
     if(user!==null){
-      axios.get(`https://localhost:44319/Card/MyCards/${user.id}`)
+      axios.get(`${process.env.REACT_APP_BASE_URL}/Card/MyCards/${user.id}`)
       .then(res=>{
         setData(res.data)
       })

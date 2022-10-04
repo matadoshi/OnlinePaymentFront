@@ -13,7 +13,7 @@ const Paynext = () => {
     const dispatch = useDispatch();
     useEffect(() => { 
         fetch(
-          `https://localhost:44319/Home/pay/next/${searchParams.get("id")}`,
+          `${process.env.REACT_APP_BASE_URL}/Home/pay/next/${searchParams.get("id")}`,
           {
               method: "GET",
               headers: {

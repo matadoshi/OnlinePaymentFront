@@ -6,7 +6,7 @@ const Customer = () => {
 
   useEffect(()=>
     {
-      axios.get("https://localhost:44319/Home/GetCustomers")
+      axios.get(process.env.REACT_APP_BASE_URL+"/Home/GetCustomers")
       .then(resp=>setCustomer(resp.data))
     },[])
   return (

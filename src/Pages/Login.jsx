@@ -27,7 +27,7 @@ function Login() {
           }}
           onSubmit={(e)=>
           {
-            axios.post("https://localhost:44319/Account/Login",e)
+            axios.post(process.env.REACT_APP_BASE_URL+"/Account/Login",e)
             .then(resp=>
               {
                 if(resp.status===200)

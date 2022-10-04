@@ -8,7 +8,7 @@ function Category() {
   const navigate=useNavigate();
   useEffect(()=>
     {
-      axios.get("https://localhost:44319/Home/GetCategory")
+      axios.get(process.env.REACT_APP_BASE_URL+"/Home/GetCategory")
       .then(resp=>setCtg(resp.data))
     },[])
 

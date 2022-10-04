@@ -38,7 +38,7 @@ function Register() {
               phoneNumber:val.phoneNumber
             };
 
-            axios.post("https://localhost:44319/Account/Register",val)
+            axios.post(process.env.REACT_APP_BASE_URL+"/Account/Register",val)
             .then(resp=>
               {
                 if(resp.status===200)
