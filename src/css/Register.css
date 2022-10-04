@@ -1,0 +1,13 @@
+.input-register{
+    border-radius: 8px;
+    border: 1px solid #292929;
+    padding: 7px;
+}
+.input-button{
+    padding: 7px;
+    background-color: #0076FE;
+    color: white;
+    font-size: 20px;
+    border-radius: 15px;
+    border: none;
+}

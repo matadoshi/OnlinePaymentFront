@@ -1,0 +1,12 @@
+.att-logo{
+    height: 72px;
+    width: 150px;
+    margin-bottom: 22px;
+}
+.att-list{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+    grid-gap: 24px;
+    grid-auto-rows: 1fr;
+}

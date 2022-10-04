@@ -1,0 +1,24 @@
+.login{
+    background-color: #EEF1F4;
+}
+.login-back{
+    border: 1px solid #b9c1c9;
+    border-radius: 16.5px;
+    padding: 4px 15px;
+    left: -5px;
+    top: 10px;
+    position: relative;
+    text-decoration: none;
+    color: #292929;
+}
+.input{
+    border: 1px solid #6d6d6d;
+    padding: 10px;
+    border-radius: 6px;
+}
+.submit{
+    background-color: #0076FE;
+    border: none;
+    border-radius: 6px;
+    color: white;
+}

@@ -1,0 +1,42 @@
+.slider-item
+{
+    width: 100%;
+    height: 500px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.slick-prev {
+    left: 3% !important;
+    z-index: 1;
+  }
+  .slick-next {
+    right: 3% !important;
+    z-index: 1;
+  }
+.slider-item img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slider{
+    position: relative;
+    height: 600px;
+    width: 100%;
+}
+.main-title{
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+}
+.sub-title{
+    position: absolute;
+    top: 60%;
+    color: white;
+    font-size: 22px;
+}

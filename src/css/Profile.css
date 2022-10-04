@@ -1,0 +1,30 @@
+.inputprofile{
+    border-radius: 8px;
+    border: 1px solid #292929;
+    padding: 7px 10px;
+}
+.p-form{
+    position: relative;
+}
+.photoplace{
+    position: absolute;
+    right: -150px;
+    
+}
+.profil-photo{
+    width: 100px;
+}
+.view-title{
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: .4px;
+    color: rgba(0,0,0,.6);
+    margin-top: 35px;
+}
+.view-data{
+    font-size: 16px;
+    font-weight: 500;
+}
+.view-item{
+    margin-top: 35px;
+}
