@@ -19,6 +19,7 @@ import {
     AiOutlineApartment,
     AiOutlineHome,
     AiOutlineSearch,
+    BiSupport,
     AiOutlineSetting,
 } from "react-icons/ai";
 import { MdLogout, MdOutlineAnalytics } from "react-icons/md";
@@ -111,6 +112,12 @@ const linksArray = [
         label: "History",
         icon: <AiOutlineApartment />,
         to: "/history",
+        notification: 0,
+    },
+    {
+        label: "Support",
+        icon: <AiOutlineApartment />,
+        to: "/chat",
         notification: 0,
     },
     {

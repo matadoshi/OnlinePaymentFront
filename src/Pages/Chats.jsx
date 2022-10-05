@@ -56,7 +56,7 @@ const Chats = () => {
   }
 
   return <div className='app'>
-    <h2>MyChat</h2>
+    <h2>Support</h2>
     {!connection
       ? <Lobby joinRoom={joinRoom} />
       : <Chat sendMessage={sendMessage} messages={messages} users={users} closeConnection={closeConnection} />}

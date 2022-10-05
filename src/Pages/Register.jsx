@@ -22,8 +22,8 @@ function Register() {
         <p className="text-center">Get started</p>
         <Formik
           initialValues={{
+            username:"",
             fullName: "",
-            age: "",
             email: "",
             password: "",
             confirmPassword: "",
@@ -31,7 +31,8 @@ function Register() {
           }}
           onSubmit={(val) => {
             let newUser = {
-              name: val.F,
+              username:val.useName,
+              name: val.fullName,
               surname: val.surname,
               email: val.email,
               password: val.password,
@@ -49,22 +50,26 @@ function Register() {
           }}
         >
           <Form className="login-frm container">
+          <div className="field-div">
+              <label htmlFor="fullName">Username</label>
+              <Field className="form-control w-100" type="text" name="userName" />
+            </div>
             <div className="field-div">
-              <label htmlFor="fullName">Name</label>
-              <Field className="input-register w-100" type="text" name="fullName" />
+              <label htmlFor="fullName">Fullname</label>
+              <Field className="form-control w-100" type="text" name="fullName" />
             </div>
             <div className="field-div">
               <label htmlFor="email">E-mail</label>
-              <Field className="input-register w-100" name="email" />
+              <Field className="form-control w-100" name="email" />
             </div>
             <div className="field-div">
               <label htmlFor="password">Password</label>
-              <Field className="input-register w-100" type="password" name="password" />
+              <Field className="form-control w-100" type="password" name="password" />
             </div>
             <div className="field-div">
               <label htmlFor="confirmPassword">Confirm Password</label>
               <Field
-                className="input-register w-100"
+                className="form-control w-100"
                 type="password"
                 name="confirmPassword"
               />
@@ -72,14 +77,14 @@ function Register() {
             <div className="field-div">
               <label htmlFor="phoneNumber">Phone Number</label>
               <Field
-                className="input-register w-100"
+                className="form-control w-100"
                 type="text"
                 name="phoneNumber"
               />
             </div>
             <input
               onClick={handleOpen}
-              className="input-button w-100 mb-3 mt-3"
+              className="btn btn-primary w-100 mb-3 mt-3"
               type="submit"
               value="Register"
             />
