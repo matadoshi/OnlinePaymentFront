@@ -13,7 +13,7 @@ const Chats = () => {
   const joinRoom = async (user, room) => {
     try {
       const connection = new HubConnectionBuilder()
-        .withUrl("https://localhost:44319/chat")
+        .withUrl(process.env.REACT_APP_BASE_URL+"/chat")
         .configureLogging(LogLevel.Information)
         .build();
 
