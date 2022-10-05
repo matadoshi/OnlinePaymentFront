@@ -26,7 +26,7 @@ function ResetPassword () {
   <Form className="login-frm m-auto w-50">
   <div className="field-div">
       <label htmlFor="oldpassword">Current Password</label>
-      <Field type="password" name="currentPassword" />
+      <Field class="form-control"  type="password" name="currentPassword" />
     </div>
     <div className="field-div">
       <label htmlFor="password">New Password</label>
@@ -35,6 +35,7 @@ function ResetPassword () {
     <div className="field-div">
       <label htmlFor="password">Confirm New Password</label>
       <Field
+      class="form-control" 
         type="password"
         name="confirmPassword"
       />
