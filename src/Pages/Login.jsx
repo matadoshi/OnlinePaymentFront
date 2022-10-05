@@ -50,10 +50,9 @@ function Login() {
                 <Field
                   name="email"
                   id="log-usr"
-                  className={`form-input input w-100 mb-2${username}`}
+                  className={`form-control w-100 mb-2${username}`}
                   placeholder="Enter your e-mail"
                 />
-                {errors.email&&touched.email?setUsername("err-log"):setUsername("")}
               </div>
               <div className="form-div psw-log">
                 <label className="ms-4" htmlFor="log-psw">
@@ -63,7 +62,7 @@ function Login() {
                   name="password"
                   type="password"
                   id="log-psw"
-                  className={`form-input input w-100 ${password}`}
+                  className={`form-control w-100 ${password}`}
                   placeholder="Enter your password"
                 />
                 {errors.password&&touched.password?setPassword("err-log"):setPassword("")}
@@ -71,7 +70,7 @@ function Login() {
               <input className="submit w-100 mt-3 mb-3 p-2" type="submit" value="LOGIN" />
               <div className='text-center'>
               <span className="d-block text-center">Don’t have an account?</span>
-              <Link to='/register' className='m-auto'>Create New Account</Link>
+              <Link to='/register' className='m-auto btn btn-light'>Create New Account</Link>
               </div>
             </Form>
           )}

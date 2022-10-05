@@ -35,6 +35,7 @@ function ResetPassword () {
   }}
     >
   <Form className="login-frm m-auto w-50">
+    <h1 className='text-center'>Change Password</h1>
   <div className="field-div">
       <label htmlFor="oldpassword">Current Password</label>
       <Field className="form-control"  type="password" name="currentPassword" />
@@ -44,15 +45,15 @@ function ResetPassword () {
       <Field className="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" type="password" name="newPassword" />
     </div>
     <div className="field-div">
-      <label htmlFor="password">Confirm New Password</label>
-      <Field className="form-control w-100 mt-3" type="password" name="confirmPassword"/>
+      <label htmlFor="password">Confirm Password</label>
+      <Field className="form-control w-100" type="password" name="confirmPassword"/>
     </div>
     <div className="field-div d-none">
-      <Field className="form-control w-100 mt-3" value={checkUser.id} type="password" name="id"/>
+      <Field value={checkUser.id} type="password" name="id"/>
     </div>
     <input
       onClick={handleOpen}
-      className="btn btn-primary"
+      className="btn btn-primary w-100 mt-3"
       type="submit"
       value="Update"
     />

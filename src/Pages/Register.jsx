@@ -90,7 +90,7 @@ function Register() {
             />
             <input
               onClick={()=>navigate("/login")}
-              className="input-button w-100"
+              className="btn btn-light w-100"
               type="submit"
               value="Login"
             />

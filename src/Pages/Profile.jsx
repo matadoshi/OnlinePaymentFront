@@ -54,7 +54,6 @@ function Settings() {
                           }
                         })
                     }}
-                
                 >
                 </Formik>
                 <div className="row">
@@ -63,10 +62,13 @@ function Settings() {
                           {checkUser.image==null?<p>No Data</p>:<img className="rounded-circle profil-photo" src={checkUser.image}/>}
                         </div>
                         <div className="">
-                        <Link className='d-block btn' to={{
+                        <Link className='btn w-100 btn-success mt-3 mb-3' to={{
                           pathname:'/profile/security'
                         }}><RestartAltIcon/>Security</Link>
-                        <Link onClick={handleLogOut} className='mt-3 btn d-block'><LogoutIcon />Log out</Link>
+                         <Link className='btn w-100 btn-primary' to={{
+                          pathname:'/profile/edit'
+                        }}><RestartAltIcon/>Edit</Link>
+                        <Link onClick={handleLogOut} className='mt-3 w-100 btn btn-danger'><LogoutIcon />Log out</Link>
                         </div>
                     </div>
                     <div className="col-lg-6 profile-main-title p-3">
@@ -75,7 +77,7 @@ function Settings() {
                             <div className="view-title">Fullname</div>
                             <div className='view-data'>{checkUser.fullName}</div>
                             <div className="view-title">Birth date</div>
-                            <div className="view-data">{checkUser.birthday}</div>
+                            <div className="view-data">{(checkUser.birthday)}</div>
                             <div className="view-title">Gender</div>
                             <div className="view-data">{checkUser.gender}</div>
                         </div>
