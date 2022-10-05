@@ -10,6 +10,7 @@ import History from "../Pages/History";
 import ResetPassword from "../components/Account/ResetPassword";
 import Pay from "../components/pay/Pay";
 import Paynext from "../components/pay/Paynext";
+import Chats from "../Pages/Chats";
 const BaseRoute = () => {
     return (
         <Routes>
@@ -18,6 +19,7 @@ const BaseRoute = () => {
             <Route exact path="/history" element={<History/>}/>
             <Route exact path="/profile" element={<Profile/>}/>
             <Route path='/pay/' element={<Pay/>}/>
+            <Route path='/chat' element={<Chats/>}/>
             <Route path='/pay/next/' element={<Paynext/>}/>
             <Route path="/profile/security" element={<ResetPassword/>} />
             <Route exact path="/customers" element={<Customer/>}/>
