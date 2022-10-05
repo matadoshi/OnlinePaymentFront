@@ -11,7 +11,7 @@ import './App.css'
 export const ThemeContext = React.createContext(null);
 
 const App = () => {
-    
+    console.log("salam")
     const [theme, setTheme] = useState("light");
     const themeStyle = theme === "light" ? lightTheme : darkTheme;
     const [checkUser, setCheckUser] = useState("");
