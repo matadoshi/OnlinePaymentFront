@@ -8,9 +8,11 @@ import store from './redux/store'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <Provider store={store}>
-  <BrowserRouter>
-      <App />
-  </BrowserRouter>
+      <React.StrictMode>
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
+      </React.StrictMode>
     </Provider>
 );
 reportWebVitals();
