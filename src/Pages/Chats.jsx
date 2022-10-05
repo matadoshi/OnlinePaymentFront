@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { HubConnectionBuilder, LogLevel } from '@microsoft/signalr';
 import Lobby from '../components/Chat/Lobby';
-import Chat from '../components/Chat/ChatHub.js';
+import Chat from '../components/Chat/ChatHub';
 import '../App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 

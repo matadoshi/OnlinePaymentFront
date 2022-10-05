@@ -3,7 +3,7 @@ import MessageContainer from './MessageContainer';
 import ConnectedUsers from './ConnectedUsers';
 import { Button } from 'react-bootstrap';
 
-const ChatHub = ({ sendMessage, messages, users, closeConnection }) => <div>
+const ChatHub = ({ sendMessage, messages, users, closeConnection }) => (<div>
     <div className='leave-room'>
         <Button variant='danger' onClick={() => closeConnection()}>Leave Room</Button>
     </div>
@@ -12,6 +12,6 @@ const ChatHub = ({ sendMessage, messages, users, closeConnection }) => <div>
         <MessageContainer messages={messages} />
         <SendMessageForm sendMessage={sendMessage} />
     </div>
-</div>
+</div>)
 
 export default ChatHub;
