@@ -30,12 +30,12 @@ function SliderCarousel() {
 
   return (
     <>
-      <Slider {...settings}>
+      <Slider {...settings} className='component'>
       {
         sld&&sld.map(e=>
           {
             return(
-        <div key={e.id} className="slider-item">
+        <div key={e.id} className="slider-item ">
             <img src={`${e.image}`} alt=""/>
             <div className="container">
             <h5 className="main-title">{`${e.mainTitle}`}</h5>
