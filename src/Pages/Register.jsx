@@ -12,7 +12,7 @@ function Register() {
     const handleClose = () => setOpen(false);
     const navigate = useNavigate();
     return (
-      <div className="login m-auto col-lg-5">
+      <div className="register m-auto component">
         <div className=" align-items-center p-3">
             <Link to='/' className='login-back col-lg-3'>Go Back</Link>
             <div className='col-lg-12 text-center'>
